@@ -3,9 +3,9 @@
 # Atribuit uma string a um valor
 frase = 'Curso em Video Python'
 
-#Cada caractere esta guardado em um espaço na memória do computador, os chamados índices, em python
-# o primeiro caractere de uma frase é de indice 0, logo no indice 0 estará a letra 'c', no indice 4
-# a letra 'o'.
+'''Cada caractere esta guardado em um espaço na memória do computador, os chamados índices, em python
+o primeiro caractere de uma frase é de indice 0, logo no indice 0 estará a letra 'c', no indice 4
+a letra 'o'. '''
 
 # Técnica de fatiamento (pegando indices alvos na string)
 frase[9] # Variavel + [numero]
@@ -13,7 +13,7 @@ print(frase[9]) # O décimo caracter da frase 'curso em video'
 print(frase[9:13]) # Apresenta todos os caracteres do 9 ao 12, o 13 é excluido
 print(frase[9:14])
 print(frase[9:21]) # O valor 21 n existe pois a frase só possui 20 caracteres, porém o python consegue entender e ignora o mesmo
-print(frase[9:21:2])# Vai retornar a frase do caractere 9 ao 20 porém excluindo um caractere a cada dois
+print(frase[9:21:2]) # Vai retornar a frase do caractere 9 ao 20 porém excluindo um caractere a cada dois
 print(frase[:5]) # Quando não se coloca onde vai começar a leitura começa do caracter 0, e ensse caso irá ate o 4
 print(frase[15:]) # A leitura vai começar a partir do caractere 15 até o final
 print(frase[9::3]) # A leitura irá começar no caractere 9 até o final pulando a cada 3 caracteres
@@ -21,15 +21,17 @@ print(frase[9::3]) # A leitura irá começar no caractere 9 até o final pulando
 # Análise de strings
 len(frase) # descreve o comprimento da frase
 print(len(frase))
-print(frase.count('o')) #conta quantas vezes existe a letra 'o' na frase
-print(frase.count('o',0, 13)) #conta quantos 'o' tem da posição zero até a treze (um fatiamento dentro da análise)
-print(frase.find('deo')) #diz em que momento começou o "deo', no caso, na posição 11. Se houver diferenças entre maiusculo e minúsculo o find não conseguirá encontrar o alvo e respodnerá -1
-print(frase.find('Android')) #Quando se procura uma string que não existe em outra string retorna-se o valor -1
+print(frase.count('o')) # conta quantas vezes existe a letra 'o' na frase
+print(frase.count('o',0, 13)) # conta quantos 'o' tem da posição zero até a treze (um fatiamento dentro da análise)
+print(frase.find('deo')) # diz em que momento começou o "deo', no caso, na posição 11. Se houver diferenças entre maiusculo e minúsculo o find não conseguirá encontrar o alvo e respodnerá -1
+print(frase.find('Android')) # Quando se procura uma string que não existe em outra string retorna-se o valor -1
 print('curso' in frase) # O operador in tbm procura se existe uma string em outra string, ele retorna em True ou False
 
-# Transformação
-# Uma string é imutável, mas ela pode ser manipulada através de métodos
-# O replace não muda a string, é necessário que o replace seja correspondido à variável de forma: frase = frase.replace('Python', 'Android'). Se não for assim o print da frase não mostrara a palavra android no lugar
+#Transformação
+'''Uma string é imutável, mas ela pode ser manipulada através de métodos
+O replace não muda a string, é necessário que o replace seja correspondido à variável de forma: frase = frase.replace('Python', 
+'Android'). Se não for assim o print da frase não mostrara a palavra android no lugar
+'''
 print(frase.replace('Python', 'Android')) # Substitui python por android
 print(frase.upper()) # Transforma os caracteres em maiusculos
 print(frase.lower()) # Transforma todos os caracteres em minúsculos
