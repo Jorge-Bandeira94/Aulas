@@ -1,6 +1,6 @@
-''' Tuplas são variáveis (ou coleções) que guardam um ou mais valores, diferente de variáveis comuns que só guardam um valor, e caso outro
-valor seja atribuido a elas, o anterior é esquecido. Os elementos da tupla são divididos por indices. Este conceito serve para as strings
-também em que elas são consideradas variaveis compostas devido a serem indexadas. Exemplo:'''
+''' Tuplas são variáveis (ou coleções) que guardam um ou mais valores, diferente de variáveis comuns que só guardam um valor, e caso 
+outro valor seja atribuido a elas o anterior é esquecido. Os elementos da tupla são divididos por indices. Este conceito serve para as 
+strings também que são consideradas variaveis compostas devido o fato de serem indexadas. Exemplo:'''
 
 lanche = ('sanduiche', 'pizza', 'suco', 'pudin')
 print(lanche[3]) #-> pudin
