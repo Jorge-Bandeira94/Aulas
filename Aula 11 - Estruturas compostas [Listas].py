@@ -1,5 +1,5 @@
 '''Listas são coleções de elementos entre colchetes, diferentes de tuplas são mutáveis. Assim como as tuplas, as listas
-possuem alguns métodos úteis que são usados não apenas para identificar dados dentro dela mesma mas tbm para modifica-los
+possuem alguns métodos úteis que são usados não apenas para identificar dados dentro dela mesma mas tabém para modifica-los
 como:
 
 lista.append(x) - > adiciona x na última posição da lista
@@ -10,9 +10,9 @@ lista.remove(x) - > apaga o elemento de valor x (não é indice, pode ser a stri
 lista.sort() - > ordena todos os valores em ordem crescente ou decrescente 'lista.sort(inverse=True)'
 len(lista) - > mostra a quantidade de elementos que existem na lista
 
-obs: a deleção d eum elemento rearranja a indexação dos itens na lista automaticamente
+obs: a deleção de um elemento rearranja a indexação dos itens na lista automaticamente
 
-As listas podem ser criadas também a partir de ranges, como:
+As listas podem ser criadas também a partir de ranges(), como:
 
 valores = list(range(4, 11)) - > cria uma lista chamada valores com os elementos 4 a 10, de idexação 0 a 6
 '''
@@ -31,7 +31,7 @@ print(valores)
 for v in valores:
     print('O valor é: {}'.format(v))
 
-for c, v in enumerate(valores): #enumerate + a variavel c servem para tbm demonstrar as indexaçãoes na lista valores
+for c, v in enumerate(valores): #enumerate necessita de duas variáveis, ele é usado para mostrar os índices e seus valors na listavariavel c servem para tbm demonstrar as indexaçãoes na lista valores
     print('Encontrei o valor {} na indexação {} !'.format(v, c))
 
 # Também é possível interagir diretamente com as listas através de inputs, da seguinte forma:
@@ -40,7 +40,7 @@ for count in range(0, 5):
     valores.append(int(input('Digite um novo valor para a lista: '))) #input pode ficar dentro do append e do insert
 print(valores)
 
-'''Se duas listas se igualares elas ficaram ligadas e modificar uma irá modificar diretamente a outra, esta ocorrência pode
+'''Se duas listas se igualarem, ficaram ligadas e modificar uma irá modificar diretamente a outra, esta ocorrência pode
 ser vista da seguinte forma:
 
 a = [2, 3, 4, 5, 6, 7]
@@ -74,7 +74,7 @@ Na lista pessoas:
 A lista pode ser escrita da seguinte forma:
 pessoas = [['pedro', 25], ['maria', 18], ['joão', 32]]
 
-print(pessoas[0][0]) - > dentor do indice 0 em pessoas, o item 0, netse caso 'pedro' que esta na indexação 0, da lista inicial
+print(pessoas[0][0]) - > dentro do indice 0 em pessoas, o item 0, neste caso 'pedro', que esta na indexação 0 da lista inicial
 que por sua vez é a lista de indice 0 da lista mãe 'pessoas'. caso fosse [1][1] seria 18, [2][0] seria joão. Caso eu digite apenas
 pessoas[1] irá ser mostrada a lista inteira ['maria', 19].Ou seja, os colchetes vão da designação macro para micro.
 '''
@@ -84,16 +84,16 @@ teste.append('Jorge')
 teste.append(25)
 print(teste)
 galera = []
-galera.append(teste[:]) #caso nãos eja colocado o [:] que faz uma copia e não uma correspondencia, as listas vão ser editadas concomitantemente e não individualmente
-teste[0] = 'maria' #modifiquei a lista original, mas como criei uma copia em galera, os dados anteriores estão salvos
+galera.append(teste[:]) #caso não seja colocado o [:], as listas vão ser editadas concomitantemente e não individualmente.
+teste[0] = 'maria' # modifiquei a lista original, mas como criei uma cópia em galera, os dados anteriores estão salvos.
 teste[1] = 22
-galera.append(teste[:]) #adicionei uma copia da nova lista 'teste' em galera
-print(teste) #irão aparecer as duas listas, jorge e maria.
+galera.append(teste[:]) # adicionei uma copia da nova lista 'teste' em galera.
+print(teste) # irão aparecer as duas listas, jorge e maria.
 
 galera = [['pedro', 25], ['maria', 18], ['joão', 32]]
 for pessoa in galera:
-    print(pessoa) #vai printar cada lista interna
-    print(pessoa[0]) #vai printar só as indexações 0, no caos os nomes
+    print(pessoa) # vai printar cada lista interna.
+    print(pessoa[0]) #v ai printar só as indexações 0, no caos os nomes.
     print('{} tem {} anos'.format(pessoa[0], pessoa[1]))
 
 galera1 = []
@@ -101,8 +101,8 @@ dado = []
 for c in range(0, 5):
     dado.append(input('Nome: '))
     dado.append(int(input('Idade: ')))
-    galera.append(dado[:]) #adicionando copia de dado em galera1, se n fizer isso, galera e dado serão correspondente e o clear ao final limpará ambos
-    dado.clear()  #limpando a lista dado para novo registro, caso n seja limpa, ela irá ficar adicionando informações duplicadas em galera1
+    galera.append(dado[:]) #a dicionando copia de dado em galera1, se n fizer isso, galera e dado serão correspondente e o método .clear() ao final limpará ambos
+    dado.clear()  # limpando a lista dado para novo registro, caso n seja limpa, ela irá ficar adicionando informações duplicadas em galera1
 print(galera1)
 
 for pessoa in galera:
