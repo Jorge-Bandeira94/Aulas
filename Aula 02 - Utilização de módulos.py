@@ -34,3 +34,4 @@ instalação da biblioteca. Na parte inferior do pycharm vai aparecer que a bibl
 
 import emoji
 print(emoji.emojize('Olá mundo :ghost:', use_aliases=True))
+
