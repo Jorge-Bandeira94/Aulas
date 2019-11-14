@@ -1,10 +1,8 @@
-# O código ANSI é um paradigma que está presnete em muitas linguagems, são códigos pré pronto para coisas padronizadas.
-# O melhor código para representar cores no python é o 033, neste caso será feito da seguinte forma:
-# \033[m, entre o colchete e o 'm' será inserido um código que representará a cor desejada
-# \033[estilo (do texto) texto backgorund(cor do fundo) m
-#\o33[0;33;44m
-
+'''O código ANSI é um paradigma que está presnete em muitas linguagems, são códigos pré pronto para coisas padronizadas.
+O melhor código para representar cores no python é o 033, neste caso será feito da seguinte forma:\033[m, entre o colchete e o 
+'m' será inserido um código que representará a cor desejada \033[estilo (do texto) texto backgorund(cor do fundo) m\o33[0;33;44m
 ''' 
+
 - Códigos para estilo:
 0 = Nenhum
 1 = Negrito
@@ -30,8 +28,8 @@
 45 = roxo
 46 = azul claro
 47 = cinza
-'''
 
+'''
 print('\033[1;31;43mOlá, mundo!\033[m') #O comando no final serve para limitar a coloração do background apenas à frase
 
 a = int(input('Digite um valor: '))
